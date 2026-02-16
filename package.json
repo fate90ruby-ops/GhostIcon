@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "expo": "~50.0.0",
+    "react-native": "0.73.2",
+    "expo-intent-launcher": "~11.5.0"
+  }
+}
