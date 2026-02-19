@@ -3,14 +3,19 @@
     "name": "System UI Tool",
     "slug": "ghost-icon-app",
     "version": "1.0.0",
+    "orientation": "portrait",
     "icon": "./icon.png",
+    "userInterfaceStyle": "light",
     "android": {
       "package": "com.yourname.systemuitool",
       "adaptiveIcon": {
         "foregroundImage": "./icon.png",
         "backgroundColor": "#E9C46A"
       },
-      "permissions": ["QUERY_ALL_PACKAGES", "INSTALL_SHORTCUT"]
+      "permissions": [
+        "QUERY_ALL_PACKAGES",
+        "INSTALL_SHORTCUT"
+      ]
     }
   }
 }
