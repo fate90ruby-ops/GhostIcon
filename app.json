@@ -4,13 +4,14 @@
     "slug": "GhostIcon",
     "version": "1.0.0",
     "icon": "./icon.png",
+    "extra": {
+      "eas": {
+        "projectId": "PASTE-YOUR-PROJECT-ID-HERE"
+      }
+    },
     "android": {
       "package": "com.x1092837465.shielder.vault.secure",
       "versionCode": 1,
-      "adaptiveIcon": {
-        "foregroundImage": "./icon.png",
-        "backgroundColor": "#E9C46A"
-      },
       "permissions": ["QUERY_ALL_PACKAGES", "INSTALL_SHORTCUT"]
     }
   }
