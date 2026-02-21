@@ -35,11 +35,16 @@ export default function App() {
 
   if (appState !== 'active') return <View style={{flex: 1, backgroundColor: '#000'}} />;
 
+  const handleUnlock = () => {
+    if (inputPin === pin) { setScreen('main'); setInputPin(''); } 
+    else { Alert.alert('Access Denied', 'Invalid PIN'); setInputPin(''); }
+  };
+
   if (screen === 'setup') {
     return (
       <View style={styles.lockContainer}>
         <Text style={styles.lockTitle}>SET ACCESS PIN</Text>
-        <TextInput style={styles.pinInput} placeholder="4-Digit PIN" secureTextEntry keyboardType="numeric" onChangeText={setPin}/>
+        <TextInput style={styles.pinInput} placeholder="4-Digit PIN" placeholderTextColor="#001D3D55" secureTextEntry keyboardType="numeric" onChangeText={setPin}/>
         <TouchableOpacity style={styles.actionBtn} onPress={() => pin.length >= 4 ? setScreen('main') : Alert.alert('Error','PIN too short')}>
           <Text style={styles.btnText}>CONFIRM PIN</Text>
         </TouchableOpacity>
@@ -54,7 +59,7 @@ export default function App() {
          <View style={styles.tutorialBtn}><Text style={styles.btnText}>Tutorial</Text></View>
       </View>
       <ScrollView contentContainerStyle={{padding: 20}}>
-        <TextInput style={styles.searchBar} placeholder="Search Apps..." onChangeText={setSearch}/>
+        <TextInput style={styles.searchBar} placeholder="Search Apps..." placeholderTextColor="#001D3D88" onChangeText={setSearch}/>
         {filteredApps.map((app) => (
           <TouchableOpacity key={app.id} style={styles.appRow} onPress={() => Alert.alert("Masked", app.name)}>
             <Image source={{ uri: app.icon }} style={{width: 35, height: 35, marginRight: 10}} />
@@ -76,8 +81,8 @@ const styles = StyleSheet.create({
   header: { height: 90, backgroundColor: '#F4A261', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', padding: 15 },
   tutorialBtn: { backgroundColor: '#001D3D', padding: 8, borderRadius: 10 },
   btnText: { color: '#E9C46A', fontWeight: 'bold' },
-  searchBar: { backgroundColor: '#FFF', borderRadius: 12, padding: 15, marginBottom: 15 },
+  searchBar: { backgroundColor: '#FFF', borderRadius: 12, padding: 15, marginBottom: 15, color: '#000' },
   appRow: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#F4A261', padding: 12, borderRadius: 15, marginBottom: 8 },
   appName: { color: '#001D3D', fontWeight: 'bold' },
-  saveBtn: { backgroundColor: '#001D3D', padding: 20, borderRadius: 15, alignItems: 'center' }
+  saveBtn: { backgroundColor: '#001D3D', padding: 20, borderRadius: 15, alignItems: 'center', marginTop: 10 }
 });
