@@ -4,13 +4,8 @@
   "main": "node_modules/expo/AppEntry.js",
   "dependencies": {
     "expo": "~50.0.14",
-    "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-native": "0.73.6",
-    "expo-intent-launcher": "~11.5.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.20.0"
-  },
-  "private": true
+    "expo-intent-launcher": "*" 
+  }
 }
