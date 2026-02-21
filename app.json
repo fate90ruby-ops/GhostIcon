@@ -3,10 +3,39 @@
     "name": "System UI Tool",
     "slug": "ghost-icon-app",
     "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "orientation": "portrait",
     "icon": "./icon.png",
+    "jsEngine": "hermes",
+    "backgroundColor": "#001D3D",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": [
+      "icon.png"
+    ],
     "android": {
-      "package": "com.system.uitool",
-      "permissions": ["QUERY_ALL_PACKAGES", "INSTALL_SHORTCUT"]
+      "package": "com.x1092837465.shielder.v99.vault.private.secure.app",
+      "versionCode": 1,
+      "allowBackup": false,
+      "softwareKeyboardLayoutMode": "pan",
+      "adaptiveIcon": {
+        "foregroundImage": "./icon.png",
+        "backgroundColor": "#001D3D"
+      },
+      "permissions": [
+        "QUERY_ALL_PACKAGES",
+        "INSTALL_SHORTCUT"
+      ]
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.x1092837465.shielder.v99.vault.private.secure.app"
+    },
+    "splash": {
+      "image": "./icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#001D3D"
     }
   }
 }
