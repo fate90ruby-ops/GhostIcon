@@ -1,9 +1,8 @@
 {
   "expo": {
     "name": "System UI Tool",
-    "slug": "ghosticon",
+    "slug": "ghostcon",
     "version": "1.0.0",
-    "icon": "./icon.png",
     "extra": {
       "eas": {
         "projectId": "764455df-2710-4b50-90bc-f88b1dc3bce6"
@@ -12,10 +11,6 @@
     "android": {
       "package": "com.x1092837465.shielder.vault.secure",
       "versionCode": 1,
-      "adaptiveIcon": {
-        "foregroundImage": "./icon.png",
-        "backgroundColor": "#E9C46A"
-      },
       "permissions": ["QUERY_ALL_PACKAGES", "INSTALL_SHORTCUT"]
     }
   }
