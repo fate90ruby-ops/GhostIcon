@@ -3,14 +3,19 @@
     "name": "System UI Tool",
     "slug": "ghosticon",
     "version": "1.0.0",
+    "icon": "./icon.png",
     "extra": {
       "eas": {
-        "projectId": "764455df-2710-4b50-90bc-f88b1dc3bce6"
+        "projectId": "988e4ef7-3e2d-4575-8e6c-05deb5eb032e"
       }
     },
     "android": {
       "package": "com.x1092837465.shielder.vault.secure",
       "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./icon.png",
+        "backgroundColor": "#001D3D"
+      },
       "permissions": ["QUERY_ALL_PACKAGES", "INSTALL_SHORTCUT"]
     }
   }
