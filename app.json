@@ -12,10 +12,6 @@
     "android": {
       "package": "com.x1092837465.shielder.vault.secure",
       "versionCode": 1,
-      "adaptiveIcon": {
-        "foregroundImage": "./icon.png",
-        "backgroundColor": "#001D3D"
-      },
       "permissions": ["QUERY_ALL_PACKAGES", "INSTALL_SHORTCUT"]
     }
   }
