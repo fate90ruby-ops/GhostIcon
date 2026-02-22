@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "System UI Tool",
-    "slug": "GhostIcon",
+    "slug": "ghosticon",
     "version": "1.0.0",
     "icon": "./icon.png",
     "extra": {
@@ -17,11 +17,6 @@
         "backgroundColor": "#E9C46A"
       },
       "permissions": ["QUERY_ALL_PACKAGES", "INSTALL_SHORTCUT"]
-    },
-    "splash": {
-      "image": "./icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#E9C46A"
     }
   }
 }
